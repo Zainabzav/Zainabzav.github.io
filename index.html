@@ -9,17 +9,20 @@
 <body>
     <div id="viz"></div>
     <script type = "test/javascript">
-    var yourV1Spec = 
-    {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "data": {"url": "https://jupyterhub.ischool.illinois.edu/jupyter/user/zainaba2/edit/building_inventory.csv"},
-  "mark": "bar",
-  "encoding": {
-    "x":{"field":"YEAR acquired","type":"quantitative","bin":true},
-    "y":{"aggregate":"count","type":"quantitative"},
-    "color":{"aggregate":"sum","field":"YearConstructed",
-    "Scale":{"type":"log"}}
-  }
-};
-vegaEmbed(#viz,yourV1Spec);
-    </script></body></html>
+        var yourV1Spec = 
+            {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+              "data": {"url":"https://uiuc-ischool-dataviz.github.io/spring2019online/week02/building_inventory.csv"},
+              "mark": "bar",
+              "encoding": {
+                "x":{"field":"YEAR acquired","type":"quantitative","bin":true},
+                "y":{"aggregate":"count","type":"quantitative"},
+                "color":{"aggregate":"sum","field":"YearConstructed",
+                "Scale":{"type":"log"}
+                }
+          }
+        };
+        vegaEmbed(#viz,yourV1Spec);
+    </script>
+    </body>
+</html>
