@@ -8,8 +8,8 @@
 </head>
 <body>
     <h2>Data Vizualisation Assignment - Vegalite Plot Embedding</h2>
-    <p> The plot below is a bar plot between the fields "Year Acquired" and "Year Constructed" from the building inventory data</p>
-    <h3> Year Acquired vs Year constructed</h3>
+    <p> The plot below is a bar plot between the fields "Year Acquired" and "Square Footage" from the building inventory data</p>
+    <h3> Year Acquired vs Square Footage</h3>
     <div id="vis"></div>
     <script type = "text/javascript">
         var yourVlSpec = {
@@ -21,7 +21,7 @@
         mark: 'bar',
         encoding: {
           x: {field: 'Year Acquired', type: 'quantitative',bin:true},
-          y: {field: 'Year Constructed', type: 'quantitative'}
+          y: {field: 'Square Footage', type: 'quantitative'}
         }
       };
       vegaEmbed('#vis', yourVlSpec);
